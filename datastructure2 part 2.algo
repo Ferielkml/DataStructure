@@ -1,0 +1,27 @@
+ALGORITHM Dot_product
+VAR
+matrix_v1 : ARRAY_OF INTEGER[3][1]
+matrix_v2 :ARRAY_OF INTEGER[3][1]
+ps,i,n,k=INTEGER
+
+Function dot_product(v1, v2)
+    ps :=0
+    For i from 1 to Length(v1) Do
+        ps := ps + v1[i] * v2[i]
+    End For
+    Return ps
+End Function
+BEGIN
+Algorithm determine_orthogonality_with_function(n)
+    For k from 1 to n Do
+        Read v1[i]
+        Read v2[j]
+        ps :=dot_product(v1, v2)
+        If ps = 0 Then
+            Print "The vectors v1 and v2 are orthogonal."
+        Else
+            Print "The vectors v1 and v2 are not orthogonal."
+        End If
+    End For
+End Algorithm
+END

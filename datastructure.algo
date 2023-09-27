@@ -1,0 +1,24 @@
+ALGORITHM algorithm_sum
+VAR
+    t1,t2,t3 : ARRAY_OF type INTEGER[50];
+    i,j : INTEGER ;
+    sum : INTEGER ;
+    X : INTEGER ;
+BEGIN
+    for i from 0 to length -1(t1) do
+    for j from 0 to length -1(t2) do 
+    if i=j  then break ;
+    else
+    if t3[i] <> t3[j] then 
+    X:=t3[i]; break ;
+    else 
+    if t3[i]=t3[j] then 
+    t3[i]=0 ;
+    t3[J]=0 ;
+    X=0;
+    end if
+    end for
+    sum := 0
+    sum := sum + X
+    end for
+END
